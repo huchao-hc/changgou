@@ -24,6 +24,7 @@ import java.io.IOException;
 public class FileController {
     @Autowired
     private FileService fileService;
+
     @PostMapping(value = "/upload")
     public Result<Boolean> uploadFile(HttpServletRequest request, HttpServletResponse response) throws IOException {
         Result<Boolean> result=new Result();
